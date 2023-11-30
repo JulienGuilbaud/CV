@@ -1,0 +1,83 @@
+
+@use './main.scss';
+@use './headline.scss';
+@use './info.scss';
+body {
+  background: #000;
+}
+.cv {
+  background: #fff;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .cv-headline {
+    h3 {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .cv-info {
+    h2 {
+      font-size: 26px;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+
+      svg {
+        display: block;
+        width: 22px;
+        position: absolute;
+        right: 0;
+        top: -25%;
+        fill: #4baed8;
+        transition-duration: 0.8s;
+        transition-property: transform;
+      }
+    }
+    .column {
+      width: 100%;
+      padding: 0;
+
+      &:first-child {
+        width: 100%;
+        padding: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+      .block {
+        margin-bottom: 25px;
+        border-bottom: 1px solid gray;
+
+        > .content {
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.5s linear;
+          height: 0;
+        }
+        h2.active {
+          + .content {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+            padding-bottom: 25px;
+          }
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .cv-headline {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}

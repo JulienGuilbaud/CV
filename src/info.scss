@@ -1,0 +1,104 @@
+.cv-info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  
+    .column {
+      width: 54%;
+      position: relative;
+  
+      &:first-child {
+        width: 35%;
+        padding-right: 7%;
+  
+        &:after {
+          content: '';
+          width: 2px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: #373737;
+        }
+  
+        .block {
+          span {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+  
+            img {
+              padding: 8px 10px 8px 0;
+              max-width: 20px;
+              width: 100%;
+            }
+  
+            a {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              align-items: center;
+              color: #000;
+              text-decoration: none;
+            }
+          }
+  
+        }
+      }
+  
+      .block {
+        margin-bottom: 40px;
+  
+        .item {
+          margin-bottom: 30px;
+  
+          span {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 3px;
+            font-weight: 500;
+  
+            &.font-bold {
+              font-size: 16px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+  
+            &.light {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  
+    h2 {
+      color: #4baed8;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+  
+      svg {
+        display: none;
+      }
+    }
+  
+    p {
+      font-size: 14px;
+      color: #373737;
+      line-height: 16px;
+    }
+  }
+  

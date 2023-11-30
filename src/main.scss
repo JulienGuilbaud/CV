@@ -1,0 +1,56 @@
+.cv-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 30px 285px 30px;
+    position: relative;
+    overflow: hidden;
+  
+    .cv-bg {
+      &:before,
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 150px 0 150px 700px;
+        position: absolute;
+        z-index: 1;
+      }
+  
+      &:before {
+        border-color: transparent transparent transparent #4baed8;
+        top: -85px;
+        left: 0;
+      }
+  
+      &:after {
+        border-color: transparent transparent transparent #02497f;
+        transform: rotate(180deg);
+        top: -195px;
+        left: unset;
+        right: -50px;
+      }
+  
+      &.footer {
+        transform: rotate(180deg);
+  
+        &:before {
+          top: unset;
+          bottom: 55px;
+          left: -30px;
+        }
+  
+        &:after {
+          top: unset;
+          bottom: 160px;
+          right: -80px;
+        }
+      }
+    }
+  
+    * {
+      font-family: 'Hind Siliguri', sans-serif;
+      z-index: 2;
+    }
+  }
+  ////

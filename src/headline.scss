@@ -1,0 +1,38 @@
+
+.cv-headline {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 85%;
+    justify-content: space-between;
+  
+    > img {
+      border-radius: 50%;
+      border: 8px solid #fff;
+      margin-bottom: 40px;
+      margin-right: 20px;
+      max-width: 210px;
+      width: 100%;
+    }
+  
+  
+    h1 {
+      font-size: 65px;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+  }
+  ///
