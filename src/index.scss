@@ -2,6 +2,9 @@
 @use './main.scss';
 @use './headline.scss';
 @use './info.scss';
+* {
+  z-index: 2;
+}
 body {
   background: #000;
 }
@@ -9,27 +12,26 @@ body {
   background: #fff;
 }
 
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 59rem) {
   .cv-headline {
+    flex-direction: column;
     h3 {
-      font-size: 18px;
+      font-size: 1.25rem;
     }
     h1 {
-      font-size: 45px;
+      font-size: 2rem;
     }
   }
   .cv-info {
     h2 {
-      font-size: 26px;
+      font-size: 1.5rem;
       font-weight: 600;
       position: relative;
       cursor: pointer;
 
       svg {
         display: block;
-        width: 22px;
+        width: 1.5rem;
         position: absolute;
         right: 0;
         top: -25%;
@@ -51,8 +53,8 @@ body {
         }
       }
       .block {
-        margin-bottom: 25px;
-        border-bottom: 1px solid gray;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.1rem solid gray;
 
         > .content {
           visibility: hidden;
@@ -65,7 +67,7 @@ body {
             visibility: visible;
             opacity: 1;
             height: auto;
-            padding-bottom: 25px;
+            padding-bottom: 1.5rem;
           }
           svg {
             transform: rotate(180deg);
@@ -75,9 +77,4 @@ body {
     }
   }
 }
-@media only screen and (max-width: 640px) {
-  .cv-headline {
-    max-width: 100%;
-    flex-direction: column;
-  }
-}
+
