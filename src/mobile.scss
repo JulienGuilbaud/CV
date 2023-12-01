@@ -1,3 +1,5 @@
+@use './var.scss' as var;
+
 @media only screen and (max-width: 59rem) {
     .cv-headline {
       flex-direction: column;
@@ -22,7 +24,7 @@
           position: absolute;
           right: 0;
           top: -25%;
-          fill: #4baed8;
+          fill:var.$couleur-secondaire;
           transition-duration: 0.8s;
           transition-property: transform;
         }

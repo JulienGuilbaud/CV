@@ -1,3 +1,4 @@
+@use './var.scss' as var;
 .cv-main {
     max-width: 60rem;
     margin: 0 auto;
@@ -18,13 +19,13 @@
       }
   
       &:before {
-        border-color: transparent transparent transparent #4baed8;
+        border-color: transparent transparent transparent var.$couleur-secondaire;
         top: -5rem;
         left: 0;
       }
   
       &:after {
-        border-color: transparent transparent transparent #02497f;
+        border-color: transparent transparent transparent var.$couleur-principale;
         transform: rotate(180deg);
         top: -12rem;
         left: unset;

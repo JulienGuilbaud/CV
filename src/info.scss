@@ -1,3 +1,4 @@
+@use './var.scss' as var;
 .cv-info {
     display: -webkit-box;
     display: -moz-box;
@@ -36,10 +37,11 @@
             align-items: center;
             font-size: 1em;
   
-            img {
+            ion-icon {
               padding: 0.5rem 0.625rem 0.5rem 0;
-              max-width: 1.25rem;
-              width: 100%;
+              max-width: 1rem;
+              
+              color:var.$couleur-secondaire;
             }
   
             a {
@@ -84,7 +86,7 @@
     }
   
     h2 {
-      color: #4baed8;
+      color: var.$couleur-secondaire;
       font-size: 2em;
       font-weight: 700;
       text-transform: uppercase;
