@@ -3,6 +3,7 @@
 @use './headline.scss';
 @use './info.scss';
 @use './mobile.scss';
+@use './var.scss' as var;
 * {
   z-index: 2;
 }
@@ -12,6 +13,7 @@ body {
 .cv {
   background: #fff;
   font-family: 'Lexend', sans-serif;
+  color: var.$couleur-text;
 }
 
 

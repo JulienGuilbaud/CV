@@ -51,7 +51,7 @@
               display: -webkit-flex;
               display: flex;
               align-items: center;
-              color: #000;
+              color: var.$couleur-text;
               text-decoration: none;
             }
           }
@@ -99,7 +99,6 @@
   
     p {
       font-size: 1em;
-      color: #373737;
       line-height: 1rem;
     }
   }
