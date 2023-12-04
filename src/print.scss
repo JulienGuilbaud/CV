@@ -1,0 +1,62 @@
+@use './var.scss' as var;
+@media print {
+  .cv{
+    margin: 0;
+    padding: 0;
+  }
+    .cv-main{  
+        margin: 0;
+        font-size: 0.8em;
+      
+        .cv-headline {
+            width: 100%;
+            height: 18rem;
+            margin-bottom: -3rem;
+            
+          }
+          .cv-info {
+            margin: 0;
+          }
+          .column {
+            width: 65%;
+          &:first-child {
+                width: 27%;
+              }
+          }
+          h1{
+            font-size: 1.5em;
+          }
+          h2{
+            font-size: 1em;
+            margin-bottom: 0.5rem;
+          }
+
+          h3{
+            display: none;
+          }
+          .block{
+            margin: 0;
+            
+          }
+          .content {
+            margin: 0rem;
+            margin-bottom: -1rem;   
+          }
+          .item {  
+              margin: 0rem; 
+              
+          }
+    
+        p{
+            margin: 0;
+        }
+        button{display: none;}
+
+      
+        
+     
+
+      
+
+    }
+}

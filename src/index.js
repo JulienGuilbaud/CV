@@ -17,3 +17,4 @@ for (i = 0; i < mobileacc.length; i++) {
     this.classList.toggle("active");
   });
 }
+

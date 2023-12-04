@@ -1,6 +1,7 @@
 @use './var.scss' as var;
 
 @media only screen and (max-width: 59rem) {
+  button{display: none;}
     .cv-headline {
       flex-direction: column;
       h3 {
