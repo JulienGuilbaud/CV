@@ -39,9 +39,9 @@
   
             ion-icon {
               padding: 0.5rem 0.625rem 0.5rem 0;
-              max-width: 1rem;
-              
+              font-size: 2em;
               color:var.$couleur-secondaire;
+          
             }
   
             a {
@@ -95,5 +95,14 @@
   
     p {
       font-size: 1em;
+    }
+    .qrcode{
+      margin-left: -0.5rem;
+
+       width: 10rem; 
+     
+    }
+    .onlyprint{
+      display: none;
     }
   }

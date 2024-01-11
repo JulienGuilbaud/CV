@@ -1,62 +1,29 @@
 @use './var.scss' as var;
 @media print {
   .cv{
-    margin: 0;
-    padding: 0;
+    margin: -1rem;
+    padding: -1rem;
+    font-size: 0.8em;
   }
-    .cv-main{  
-        margin: 0;
-        font-size: 0.8em;
-      
-        .cv-headline {
-            width: 100%;
-            height: 18rem;
-            margin-bottom: -3rem;
-            
-          }
-          .cv-info {
-            margin: 0;
-          }
-          .column {
-            width: 65%;
-          &:first-child {
-                width: 27%;
-              }
-          }
-          h1{
-            font-size: 1.5em;
-          }
-          h2{
-            font-size: 1em;
-            margin-bottom: 0.5rem;
-          }
+  .cv-headline{
+   margin-bottom: -7rem;
+  }
 
-          h3{
-            display: none;
-          }
-          .block{
-            margin: 0;
-            
-          }
-          .content {
-            margin: 0rem;
-            margin-bottom: -1rem;   
-          }
-          .item {  
-              margin: 0rem; 
-              
-          }
+   
+    .cv-info .column .block .item {
+      margin-bottom: 0.5rem;
+  }
+  .cv-info p {
     
-        p{
-            margin: 0;
-        }
-        button{display: none;}
-
-      
-        
-     
-
-      
-
-    }
+    margin: 0;
+}
+.cv-info h2{
+  margin-bottom: 0
+}
+.cv-info .onlyprint{
+  display: contents;
+}
+button{
+  display: none;
+}  
 }
