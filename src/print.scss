@@ -1,5 +1,11 @@
 @use './var.scss' as var;
 @media print {
+    a {
+        display: flex;
+        align-items: center;
+        color: var.$couleur-text;
+        text-decoration: none;
+            }
   .cv{
     margin: -1rem;
     padding: -1rem;

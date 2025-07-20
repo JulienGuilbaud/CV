@@ -1,4 +1,5 @@
 @use './var.scss' as var;
+
 .cv-info {
     display: -webkit-box;
     display: -moz-box;
@@ -36,14 +37,7 @@
             display: flex;
             align-items: center;
             font-size: 1em;
-  
-            ion-icon {
-              padding: 0.5rem 0.625rem 0.5rem 0;
-              font-size: 2em;
-              color:var.$couleur-secondaire;
-          
-            }
-  
+    
             a {
               display: -webkit-box;
               display: -moz-box;
@@ -64,6 +58,7 @@
   
         .item {
           margin-bottom: 2rem;
+
   
           span {
             display: block;
@@ -104,5 +99,29 @@
     }
     .onlyprint{
       display: none;
+    }
+
+    .cv-actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    
+      button,
+      .button-like {
+        background-color: var.$couleur-secondaire;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.9em;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: var.$couleur-principale;
+        }
+      }
     }
   }
