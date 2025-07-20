@@ -8,13 +8,11 @@ setInterval(function() {
 }, 10000);
 
 
+// Accordion for mobile view
+const accordionToggles = document.querySelectorAll(".heading");
 
-const mobileacc = document.getElementsByClassName("heading");
-
-
-for (i = 0; i < mobileacc.length; i++) {
-  mobileacc[i].addEventListener("click", function() {
+accordionToggles.forEach(toggle => {
+  toggle.addEventListener("click", function() {
     this.classList.toggle("active");
   });
-}
-
+});

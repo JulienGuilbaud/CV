@@ -14,168 +14,149 @@
   <script async type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
   <script async type="module" src="index.js"></script>
 
-  <title>Mon CV</title>
+  <title>CV - Julien GUILBAUD, Développeur Web</title>
   <meta name="description" content="Découvrez le CV de Julien GUILBAUD, un développeur web talentueux et passionné, prêt à relever de nouveaux défis.">
 </head>
 
 <body>
-  <div class="cv cv-main">
+  <main class="cv cv-main">
     <div class="cv-bg header"></div>
-    <div class="cv-headline">
-      <img src="../docs/images/profilpro.webp" alt="CV Profile Photo" width="208" height="249" />
+    <header class="cv-headline">
+      <img src="../docs/images/profilpro.webp" alt="Photo de profil de Julien GUILBAUD" width="208" height="249" />
       <div class="name-title">
-        <h3>Curiculum Vitae</h3>
-        <h3>Développeur</h3>
+        <p>Curriculum Vitae</p>
+        <p>Développeur</p>
         <h1>Julien GUILBAUD</h1>
       </div>
-    </div>
+    </header>
     
     <div class="cv-info">
       <div class="column">
-        <div class="block">
-          <h2 class="heading">À propos de moi<svg viewBox="0 0 320 512" width="100" title="angle-down">
-            <path
-            d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-          </svg></h2>
-              <div class="content">
-                <p>
-                  Développeur Node.js avec une spécialisation React.js de formation, je
-                  me suis familiarisé avec PHP et Laravel. Je suis autant intéressé par le
-                  côté front-end que back-end avec une attention sur l'accessibilité.
-                  Peu importe la techno, curieux et passionné de nature, je saurais m'adapter et être flexible.
-                </p>
-              </div>
-            </div>
-            <div class="block">
-              <h2 class="heading">Contact <svg viewBox="0 0 320 512" width="100" title="angle-down">
-                <path
-                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-              </svg></h2>
-              <div class="content">
-                <span><ion-icon name="mail"></ion-icon>
-                  <a href="mailto:dev.guilbaud@gmail.com">dev.guilbaud@gmail.com</a></span>
-                  <span><ion-icon name="call"></ion-icon>
-                    <a href="tel:+33615161209">06.15.16.12.09</a></span>
-                    <span><ion-icon name="home"></ion-icon>
-                      3814 route de villamblard , 24100 LEMBRAS</span>
-                      <span><ion-icon name="logo-linkedin"></ion-icon>
-                        <a href="https://www.linkedin.com/in/julien-guilbaud-b1059222a" target="_blank">
-                          www.linkedin.com/in/julien-guilbaud</a></span>
-                        <span><ion-icon name="logo-octocat"></ion-icon>
-                          <a href="https://github.com/JulienGuilbaud" target="_blank">https://github.com/JulienGuilbaud</a></span>
-                        </div>
-                      </div>
-                      <div class="block">
-          <h2 class="heading">Hobbies <svg viewBox="0 0 320 512" width="100" title="angle-down">
-            <path
-              d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-            </svg></h2>
-            <div class="content">
-              <span><ion-icon name="desktop"></ion-icon>Hardware</span>
-              <span><ion-icon name="construct"></ion-icon>Mécanique</span>
-            </div>
+        <section class="block">
+          <h2 class="heading">À propos de moi<ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
+          <div class="content">
+            <p>
+              Développeur Node.js avec une spécialisation React.js de formation, je
+              me suis familiarisé avec PHP et Laravel. Je suis autant intéressé par le
+              côté front-end que back-end avec une attention sur l'accessibilité.
+              Peu importe la techno, curieux et passionné de nature, je saurais m'adapter et être flexible.
+            </p>
           </div>
+        </section>
+        <section class="block">
+          <h2 class="heading">Contact <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
+          <address class="content">
+            <ul>
+              <li><ion-icon name="mail-outline" aria-hidden="true"></ion-icon> <a href="mailto:dev.guilbaud@gmail.com">dev.guilbaud@gmail.com</a></li>
+              <li><ion-icon name="call-outline" aria-hidden="true"></ion-icon> <a href="tel:+14189296282">418-929-6282</a></li>
+              <li><ion-icon name="home-outline" aria-hidden="true"></ion-icon> 4241 rue des cornalines, G6w 8L9</li>
+              <li><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon> <a href="https://www.linkedin.com/in/julien-guilbaud-b1059222a" target="_blank" rel="noopener noreferrer">linkedin.com/in/julien-guilbaud</a></li>
+              <li><ion-icon name="logo-github" aria-hidden="true"></ion-icon> <a href="https://github.com/JulienGuilbaud" target="_blank" rel="noopener noreferrer">github.com/JulienGuilbaud</a></li>
+            </ul>
+          </address>
+        </section>
+        <section class="block">
+          <h2 class="heading">Hobbies <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
+          <div class="content">
+            <ul>
+              <li><ion-icon name="desktop-outline" aria-hidden="true"></ion-icon> Hardware</li>
+              <li><ion-icon name="construct-outline" aria-hidden="true"></ion-icon> Mécanique</li>
+            </ul>
+          </div>
+        </section>
+        <div class="cv-actions">
           <button onclick="window.print()">Imprimer ce CV</button>
-          <a href="../docs/pdf/my-cv.pdf" download="CV.pdf"><button>Télécharger le PDF</button></a>
-          <div class="onlyprint">
-           <div class="block">
-             <h2 class="heading">portfolio</h2>
-             <span>
-              <img src="../docs/images/qr-code.svg" alt="qr code " class="qrcode" >
-             </span>
-           </div>
-          </div>
+          <a href="../docs/pdf/my-cv.pdf" download="CV-Julien-GUILBAUD.pdf" class="button-like">Télécharger le PDF</a>
+        </div>
+        <div class="onlyprint">
+          <section class="block">
+            <h2 class="heading">Portfolio</h2>
+            <div class="content">
+              <img src="../docs/images/qr-code.svg" alt="QR Code vers le portfolio de Julien Guilbaud" class="qrcode" width="100" height="100">
+            </div>
+          </section>
+        </div>
       </div>
 
       <div class="column">
-        <div class="block">
-          <h2 class="heading">Diplomes <svg viewBox="0 0 320 512" width="100" title="angle-down">
-            <path
-            d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-          </svg></h2>
+        <section class="block">
+          <h2 class="heading">Expériences <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
           <div class="content">
 
-            <div class="item">
-              <span class="font-bold">Titre Professionnel Développeur Web et Mobile</span>
-              <p>2022-2023 O'clock téléprésentiel</p>
-            </div>
+            <article class="item">
+              <strong>Auto-entrepreneur</strong>
+              <p>janv. 2024 - mai 2024</p>
+              <p>Maintenance de site e-commerce. et ERP/CRM avec WOrdpress/WooCommerce/Odoo/Python.</p>
+            </article>
             
-            <div class="item">
-              <span class="font-bold">CQP maintenance et réparation électrique / électronique automobile</span>
-              <p>2010-2011 GNFA Alternance</p>
-            </div>
-            
-            <div class="item">
-              <span class="font-bold">BTS technicien en mécanique et maintenance d'appareils aériens</span>
-              <p>2007-2009 EFSOAA École militaire</p>
-            </div>
-
-            <div class="item">
-              <span class="font-bold">Baccalauréat STI Génie électronique</span>
-              <p>2004-2007 EETAA École militaire</p>
-            </div>
-
-          </div>
-        </div>
-        <div class="block">
-          <h2 class="heading">Expériences <svg viewBox="0 0 320 512" width="100" title="angle-down">
-            <path
-            d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-          </svg></h2>
-          <div class="content">
-
-            <div class="item">
-              <span class="font-bold">auto entrepreneur</span>
-              <p>depuis janv. 2024</p>
-              <p>Maintenance de site e-commerce </p>
-            </div>
-            
-            <div class="item">
-              <span class="font-bold">Crédit Agricole Charente Périgord</span>
+            <article class="item">
+              <strong>Crédit Agricole Charente Périgord</strong>
               <p>août 2023 - oct. 2023 Stage</p>
-              <p>Développement fulltstack d'application interne avec PHP/LARAVEL/MySQL/VUE/Tailwind </p>
-            </div>
+              <p>Développement fullstack d'application interne avec PHP/Laravel/MySQL/Vue.js/Tailwind.</p>
+            </article>
 
-            <div class="item">
-              <span class="font-bold">Univ'info</span>
+            <article class="item">
+              <strong>Univ'info</strong>
               <p>juil. 2023 - août 2023 Stage</p>
-              <p>Développement fulltstack et déploiement d'un CRM avec NODE/REACT/PostgreSQL/Sequelize</p>
-            </div>
+              <p>Développement fullstack et déploiement d'un CRM avec Node.js/React/PostgreSQL/Sequelize.</p>
+            </article>
             
-            <div class="item">
-              <span class="font-bold">Technicien Maintenance</span>
+            <article class="item">
+              <strong>Technicien Maintenance</strong>
               <p>Jusqu'en 2022 CDI</p>
-              <p>Plus de 12 ans d'expérience de technicien dans divers secteurs</p>
-            </div>
+              <p>Plus de 12 ans d'expérience de technicien dans divers secteurs.</p>
+            </article>
             
           </div>
-        </div>
+        </section>
+        <section class="block">
+          <h2 class="heading">Diplômes <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
+          <div class="content">
+
+            <article class="item">
+              <strong>Titre Professionnel Développeur Web et Mobile</strong>
+              <p>2022-2023 O'clock téléprésentiel</p>
+            </article>
+            
+            <article class="item">
+              <strong>CQP maintenance et réparation électrique / électronique automobile</strong>
+              <p>2010-2011 GNFA Alternance</p>
+            </article>
+            
+            <article class="item">
+              <strong>BTS technicien en mécanique et maintenance d'appareils aériens</strong>
+              <p>2007-2009 EFSOAA École militaire</p>
+            </article>
+            
+            <article class="item">
+              <strong>Baccalauréat STI Génie électronique</strong>
+              <p>2004-2007 EETAA École militaire</p>
+            </article>
+            
+          </div>
+        </section>
         
-        <div class="block">
-          <h2 class="heading">Compétences techniques <svg viewBox="0 0 320 512" width="100" title="angle-down">
-            <path
-            d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-          </svg></h2>
+        <section class="block">
+          <h2 class="heading">Compétences techniques <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon></h2>
           <div class="content">
             
-            <div class="item">
-              <span class="font-bold">fullstack</span>
+            <article class="item">
+              <strong>Fullstack</strong>
               <p>Développer la partie front-end et back-end d'une application web ou web
-                mobile en intégrant les recommandations de sécurité</p>
-              </div>
+                mobile en intégrant les recommandations de sécurité.</p>
+            </article>
           
-              <div class="item">
-                <span class="font-bold">versioning</span>
-                <p>Gérer et suivre les différentes versions d'un projet à l'aide d'outils de contrôle de version comme Git, assurant ainsi une collaboration efficace et la prévention des conflits de code.</p>
-              </div>
+            <article class="item">
+              <strong>Versioning</strong>
+              <p>Gérer et suivre les différentes versions d'un projet à l'aide d'outils de contrôle de version comme Git, assurant ainsi une collaboration efficace et la prévention des conflits de code.</p>
+            </article>
               
-            </div>
           </div>
+        </section>
         </div>
       </div>
     <div class="cv-bg footer"></div>
-  </div>
+  </main>
 </body>
 
 </html>
-
